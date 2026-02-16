@@ -18,10 +18,9 @@ export class Person {
         return `${this.firstname} ${this.lastname}`;
     }
     setAge(age: number): void {
-        if(isNaN(age) || age < 0) {
-            throw new Error('Age must be a non-negative number'); 
+        if(isNaN(age)) {
+            this.age = age;
         }
-        this.age = age;
     }
     getAge(): number | undefined {
         return this.age;
