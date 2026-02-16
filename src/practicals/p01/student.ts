@@ -2,19 +2,10 @@ export class Student {
   firstname: string;
   lastname: string;
 
-  constructor(firstName: string, lastName: string) {
-    this.firstname = firstName;
-    this.lastname = lastName;
+  constructor(firstname: string, lastname: string) {
+    this.firstname = firstname = 'John';
+    this.lastname = lastname = 'Doe';
   }
-
-//    getFirstName(): string {
-//      return this.firstname;
-//  }
-//
-//    getLastName(): string {
-//        return this.lastname;
-//  }
-
   printName(): string {
     const fullName = `${this.firstname} ${this.lastname}`;
     console.log(fullName);
