@@ -12,7 +12,7 @@ export class Person {
             this.age = age;
         }
     }
-    getAge(): number | undefined {
+    getAge(): number {
         return this.age;
     }
 }
