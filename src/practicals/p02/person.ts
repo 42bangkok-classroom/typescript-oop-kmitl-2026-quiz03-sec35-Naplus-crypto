@@ -1,5 +1,5 @@
 export class Person {
-    static COUNTRY : string= 'Thailand'; // หรือค่าคงที่ที่กำหนดเอง
+    static COUNTRY = 'Thailand'; // หรือค่าคงที่ที่กำหนดเอง
     firstname?: string;
     lastname?: string;
     private age: number = 25;
@@ -8,7 +8,7 @@ export class Person {
         return `${this.firstname} ${this.lastname}`;
     }
     setAge(age: number) {
-        if(isNaN(age)) {
+        if(!isNaN(age)) {
             this.age = age;
         }
     }
