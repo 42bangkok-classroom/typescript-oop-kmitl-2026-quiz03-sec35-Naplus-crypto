@@ -2,7 +2,7 @@ export class Person {
     static COUNTRY = 'Thailand'; // หรือค่าคงที่ที่กำหนดเอง
     firstname?: string;
     lastname?: string;
-    age?: number = 25;
+    age: number = 25;
     
     getFullName() {
         return `${this.firstname} ${this.lastname}`;
