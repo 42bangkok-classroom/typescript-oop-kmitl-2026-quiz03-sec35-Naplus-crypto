@@ -1,5 +1,5 @@
 export class Person {
-    static COUNTRY = 'Thailand'; // หรือค่าคงที่ที่กำหนดเอง
+    static COUNTRY : string= 'Thailand'; // หรือค่าคงที่ที่กำหนดเอง
     firstname?: string;
     lastname?: string;
     private age: number = 25;
